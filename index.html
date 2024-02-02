@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style href = "style.css"></style>
+    </head>
+    <body>
+        <div id = "header">
+            <h1 style = "font-size: 50px;">JS Calculator</h1>
+            <p>Returns the output of functions and operations</h2>
+        </div>
+        <hr>
+        <div id = "settings">
+
+        </div>
+        <hr>
+        <div id = "input1">
+            <h1 style = "font-size: 25px;">Enter the first operand:</h1>
+            <br />
+            <input id = "n1" type = "text" value = 1>
+            <select id = "type1">
+                <option value = "number" selected>Number</option>
+                <option value = "string">String</option>
+            </select>
+        </div>
+        <hr>
+        <div id = "operation">
+            <h1 style = "font-size: 25px;">Enter the operator:</h1>
+            <br />
+            <p style = "font-size: 20px;">Number Operators:</p>
+            <input type = "radio" id = "plus" name = "operation" value = "plus" checked>
+            <label for = "plus">+</label>
+            <input type = "radio" id = "minus" name = "operation" value = "minus">
+            <label for = "minus">-</label>
+            <input type = "radio" id = "multiply" name = "operation" value = "multiply">
+            <label for = "multiply">*</label>
+            <input type = "radio" id = "divide" name = "operation" value = "divide">
+            <label for = "divide">/</label>
+            <input type = "radio" id = "integerDivide" name = "operation" value = "integerDivide">
+            <label for = "integerDivide">//</label>
+            <input type = "radio" id = "modulo" name = "operation" value = "modulo">
+            <label for = "modulo">%</label>
+            <input type = "radio" id = "powerOf" name = "operation" value = "powerOf">
+            <label for = "powerOf">^</label>
+            <p style = "font-size: 20px;">String Operators:</p>
+            <input type = "radio" id = "concat" name = "operation" value = "concat">
+            <label for = "concat">+ (concatenation operator)</label>
+            <p style = "font-size: 20px;">Comparison Operators:</p>
+            <input type = "radio" id = "equal" name = "operation" value = "equal">
+            <label for = "equal">==</label>
+            <input type = "radio" id = "strictlyEqual" name = "operation" value = "strictlyEqual">
+            <label for = "strictlyEqual">===</label>
+            <input type = "radio" id = "notEqual" name = "operation" value = "notEqual">
+            <label for = "notEqual">!=</label>
+            <input type = "radio" id = "strictlyNotEqual" name = "operation" value = "strictlyNotEqual">
+            <label for = "strictlyNotEqual">!==</label>
+            <input type = "radio" id = "smaller" name = "operation" value = "smaller">
+            <label for = "smaller"><</label>
+            <input type = "radio" id = "smallerEqual" name = "operation" value = "smallerEqual">
+            <label for = "smallerEqual"><=</label>
+            <input type = "radio" id = "bigger" name = "operation" value = "bigger">
+            <label for = "bigger">></label>
+            <input type = "radio" id = "biggerEqual" name = "operation" value = "biggerEqual">
+            <label for = "biggerEqual">>=</label>
+        </div>
+        <hr>
+        <div id = "input2">
+            <h1 style = "font-size: 25px;">Enter the second operand:</h1>
+            <br />
+            <input id = "n2" type = "text" value = 1>
+            <select id = "type2">
+                <option value = "number" selected>Number</option>
+                <option value = "string">String</option>
+            </select>
+        </div>
+        <hr>
+        <div id = "output">
+        
+        </div>
+        <hr>
+        <div id = "log">
+        
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
