@@ -1,2 +1,2 @@
-# JSCalculator
+# JS Calculator
 It looks like your standard calculator, but it can do so much more!
