@@ -1,0 +1,7 @@
+#header, #settings, #input1, #input2, #operation, #output, #log {
+    text-align: center;
+}
+
+.inline {
+    display: inline;
+}

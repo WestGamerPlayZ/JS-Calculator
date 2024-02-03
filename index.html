@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style href = "style.css"></style>
+    </head>
+    <body>
+        <div id = "header">
+            <h1 style = "font-size: 50px;">JS Calculator</h1>
+            <p style = "font-size: 25px;">Returns the output of functions and operations</h2>
+        </div>
+        <hr>
+        <div id = "settings">
+            <h1 style = "font-size: 25px;">Settings:</h1>
+            <br />
+            <div id = "theme">
+                <p style = "font-size: 20px;" class = "inline">Color Theme:</p>
+                <input type = "radio" id = "white" name = "theme" value = "white" checked>
+                <label for = "white">White</label>
+                <input type = "radio" id = "black" name = "theme" value = "black">
+                <label for = "black">Black</label>
+            </div>
+            <br />
+            <button onclick = "applySettings()">Apply Settings</button>
+        </div>
+        <hr>
+        <div id = "input1">
+            <h1 style = "font-size: 25px;">Enter the first operand:</h1>
+            <br />
+            <input id = "n1" type = "number" value = 1>
+        </div>
+        <hr>
+        <div id = "operation">
+            <h1 style = "font-size: 25px;">Enter the operator:</h1>
+            <br />
+            <p style = "font-size: 20px;">Number Operators:</p>
+            <input type = "radio" id = "+" name = "operation" value = "+" checked>
+            <label for = "+">+</label>
+            <input type = "radio" id = "-" name = "operation" value = "-">
+            <label for = "-">-</label>
+            <input type = "radio" id = "*" name = "operation" value = "*">
+            <label for = "*">*</label>
+            <input type = "radio" id = "/" name = "operation" value = "/">
+            <label for = "/">/</label>
+            <input type = "radio" id = "//" name = "operation" value = "//">
+            <label for = "//">//</label>
+            <input type = "radio" id = "%" name = "operation" value = "%">
+            <label for = "%">%</label>
+            <input type = "radio" id = "^" name = "operation" value = "^">
+            <label for = "^">^</label>
+            <p style = "font-size: 20px;">Comparison Operators:</p>
+            <input type = "radio" id = "==" name = "operation" value = "==">
+            <label for = "==">==</label>
+            <input type = "radio" id = "===" name = "operation" value = "===">
+            <label for = "===">===</label>
+            <input type = "radio" id = "!=" name = "operation" value = "!=">
+            <label for = "!=">!=</label>
+            <input type = "radio" id = "!==" name = "operation" value = "!==">
+            <label for = "!==">!==</label>
+            <input type = "radio" id = "<" name = "operation" value = "<">
+            <label for = "<"><</label>
+            <input type = "radio" id = "<=" name = "operation" value = "<=">
+            <label for = "<="><=</label>
+            <input type = "radio" id = ">" name = "operation" value = ">">
+            <label for = ">">></label>
+            <input type = "radio" id = ">=" name = "operation" value = ">=">
+            <label for = ">=">>=</label>
+        </div>
+        <hr>
+        <div id = "input2">
+            <h1 style = "font-size: 25px;">Enter the second operand:</h1>
+            <br />
+            <input id = "n2" type = "number" value = 1>
+        </div>
+        <hr>
+        <div id = "output">
+            <h1 style = "font-size: 25px;">Output:</h1>
+            <br />
+            <div id = "display">
+                <div id = "equation">
+                    <p><em class = "inline">Equation: </em><span class = "inline" id = "e"></span></p>
+                </div>
+                <br />
+                <div id = "result">
+                    <p><em class = "inline">Result: </em><span class = "inline" id = "r"></span></p>
+                </div>
+            </div>
+            <br />
+            <button onclick = "generateOutput()">Generate Output!</button>
+        </div>
+        <script src = "script.js"></script>
+    </body>
+</html>
